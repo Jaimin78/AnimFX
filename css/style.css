@@ -230,11 +230,11 @@ details[open] summary~* {
 }
 
 .contact-box h1{
-  color: wheat;
+  color: white;
 }
 
 .contact-box label{
-  color: wheat;
+  color: white;
 }
 
 .contact-box form{
@@ -242,11 +242,11 @@ details[open] summary~* {
 }
 
 .contact-box input{
-  background-color: wheat;
+  background-color: white;
   width: 100%;
 }
 
 .contact-box textarea{
-  background-color: wheat;
+  background-color: white;
   width: 100%;
 }
