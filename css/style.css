@@ -1,0 +1,268 @@
+.card-container {
+  display: flex;
+  height: 100%;
+  margin: 5% 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: fit-content;
+  width: 30%;
+  display: flex;
+  margin: 2% 10%;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgb(172, 171, 170);
+  background-color: #121212;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 5px #4d4d4d;
+}
+
+.img-card img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-desc {
+  margin: 3px 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ededed;
+  font-weight: 700;
+  font-family: 'Ysabeau', sans-serif;
+  color: white;
+}
+
+.card-desc div {
+  margin: 10px 0;
+}
+
+.upcoming {
+  background-color: rgba(42, 134, 99, 0.938);
+  padding: 3px 10px;
+  font-family: 'Ysabeau', sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+.past {
+  background-color: rgba(134, 42, 42, 0.938);
+  padding: 3px 10px;
+  font-family: 'Ysabeau', sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+@media(max-width: 770px) {
+  .card {
+    width: fit-content;
+    margin: 5% 10%;
+  }
+}
+
+
+/* Team  */
+
+.team {
+  background: url("../img/team-bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.team::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 9;
+}
+
+.team .container {
+  position: relative;
+  z-index: 10;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #364146;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.team .member:hover .member-info {
+  max-height: 300px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #364146;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #b5c1c6;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #627680;
+}
+
+.team .member .social a:hover {
+  color: #009cea;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.icon-col i:hover {
+  color: black;
+}
+
+.icon-col a {
+  text-decoration: none;
+}
+
+.member-info {
+  padding: 15px;
+}
+
+.pic img {
+  max-width: 70%;
+}
+
+@media (max-width: 992px) {
+  .team .member {
+    margin-bottom: 110px;
+  }
+}
+
+
+
+/* FAQ */
+
+
+.faq-box {
+  margin: 5% 10%;
+}
+
+summary {
+  font-size: 1.75rem;
+  font-weight: 500;
+  background-color: #121212;
+  font-family: "muli-light", sans-serif;
+  color: white;
+  padding: 1rem;
+  outline: none;
+  margin: 3px 0;
+  border-radius: 0.25rem;
+  list-style: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq__content p {
+  margin: 10px 10px;
+  font-family: "muli-light", sans-serif;
+  color: white;
+}
+
+details>summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+
+details[open]>summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary~* {
+  animation: sweep .2s ease-in-out;
+}
+
+/* Contact CSS  */
+
+#contact {
+  margin: 3% 10%;
+  scroll-behavior: smooth;
+}
+
+.contact-box h1 {
+  color: white;
+}
+
+.contact-box label {
+  color: white;
+}
+
+.contact-box form {
+  padding: 0 5%;
+}
+
+.contact-box input {
+  background-color: white;
+  width: 100%;
+}
+
+.contact-box textarea {
+  background-color: white;
+  width: 100%;
+}
